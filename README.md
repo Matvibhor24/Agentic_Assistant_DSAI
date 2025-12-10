@@ -1,4 +1,4 @@
-# Agentic Assistant (DSAI)
+# Agentic Assistant (for DSAI)
 
 A simple AI helper that can read text, images, PDFs, and audio, figure out what you want, and return a plain-text reply. If it is unsure, it asks you a follow-up question instead of guessing.
 
