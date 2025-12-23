@@ -214,7 +214,6 @@ Strict requirements:
 - If needs_clarification is false, clarification_question must be an empty string.
 """
 
-
     result = await llm_json(prompt)
 
     task: Task = result.get("task", "none")
@@ -393,3 +392,9 @@ workflow.add_edge("finalize", END)
 
 checkpointer = MemorySaver()
 agent_app = workflow.compile(checkpointer=checkpointer)
+
+# png_data = agent_app.get_graph().draw_mermaid_png()
+# with open("graph.png","wb") as f:
+#     f.write(png_data)
+
+# print("Graph saved as png")
